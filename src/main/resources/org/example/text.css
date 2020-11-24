@@ -1,0 +1,55 @@
+.text-field {
+  -fx-font-family: cursive;
+  -fx-border-style: solid;
+  -fx-border-color: #ffffff;
+  -fx-background-color : #000000;
+  -fx-text-fill: #ffffff;
+}
+
+.button{
+  -fx-border-style: solid;
+  -fx-background-color: #ffffff;
+}
+
+.tab-pane{
+  -fx-background-color:#000000;
+  -fx-text-fill: #ffffff;
+}
+
+
+.chart-series-line {
+  -fx-stroke-width: 3px;            /* толщина */
+  -fx-stroke: #EF002A;                 /* цвет */
+
+}
+
+.chart-line-symbol {
+  -fx-background-color: #EF002A, white;
+  -fx-background-insets: 0, 2;
+  -fx-background-radius: 5px;
+  -fx-padding: 5px;
+}
+
+
+.menu-bar{
+  -fx-background-color: #ffffff;
+}
+.axis{
+  -fx-text-fill: #ffffff;
+}
+.chart-plot-background{
+  -fx-background-color : #000000;
+}
+.tab-header-background {
+  -fx-background-color: #ffffff;
+}
+.tab{
+  -fx-background-color: #ffffff;
+}
+
+.grid-pane {
+  -fx-background-color:  #ffffff;
+  -fx-stroke: #ffffff;
+}
+
+

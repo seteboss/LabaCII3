@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="657.0" prefWidth="756.0" style="-fx-background-color: #000000;" stylesheets="@text.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PrimaryController">
+  <children>
+    <MenuBar prefHeight="0.0" prefWidth="543.0" stylesheets="@text.css" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="СИИ 3">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+      <AnchorPane fx:id="сities" prefHeight="636.0" prefWidth="890.0" stylesheets="@text.css">
+         <children>
+            <LineChart fx:id="graph" layoutX="22.0" prefHeight="588.0" prefWidth="596.0">
+              <xAxis>
+                <NumberAxis fx:id="axisX" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="axisY" side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <Button fx:id="start" layoutX="636.0" layoutY="397.0" mnemonicParsing="false" text="Выполнить" />
+            <TextField fx:id="alpha" layoutX="618.0" layoutY="66.0" prefHeight="26.0" prefWidth="116.0" text="1.0" />
+            <TextField fx:id="beta" layoutX="618.0" layoutY="121.0" prefHeight="26.0" prefWidth="116.0" text="5.0" />
+            <TextField fx:id="rho" layoutX="618.0" layoutY="175.0" prefHeight="26.0" prefWidth="116.0" text="0.5" />
+            <Text fill="WHITE" layoutX="655.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alpha" textAlignment="CENTER" wrappingWidth="42.5628662109375" />
+            <Text fill="WHITE" layoutX="655.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beta" textAlignment="CENTER" wrappingWidth="42.5628662109375" />
+            <Text fill="WHITE" layoutX="655.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rho" textAlignment="CENTER" wrappingWidth="42.5628662109375" />
+            <TextField fx:id="city" layoutX="618.0" layoutY="294.0" prefHeight="26.0" prefWidth="116.0" stylesheets="@text.css" text="30" />
+            <Text fill="WHITE" layoutX="618.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество городов" textAlignment="CENTER" wrappingWidth="116.0" />
+            <TextField fx:id="ant" layoutX="618.0" layoutY="353.0" prefHeight="26.0" prefWidth="116.0" stylesheets="@text.css" text="30" />
+            <Text fill="WHITE" layoutX="614.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество муравьёв" textAlignment="CENTER" wrappingWidth="124.0" />
+            <TextField fx:id="q" layoutX="618.0" layoutY="233.0" prefHeight="26.0" prefWidth="116.0" text="300" />
+            <Text fill="WHITE" layoutX="655.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" textAlignment="CENTER" wrappingWidth="42.5628662109375" />
+         </children>
+      </AnchorPane>
+  </children>
+</VBox>
